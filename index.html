@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" href="static/images/misc/blackjack-icon.png" sizes="16x16" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="static/css/style.css" />
+		<title>BlackJack</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<h2>BlackJack</h2>
+			<h3><span id="blackjack-score">Let's Play</span></h3>
+			<div class="flex-blackjack-row-1">
+				<div id="your-box">
+					<h2>
+						<img src="static/images/misc/player.png" alt="Player" style="width: 60px; height: 60px" />
+						<span id="your-blackjack-score">0</span>
+					</h2>
+				</div>
+				<div id="dealer-box">
+					<h2>
+						<img src="static/images/misc/dealer.png" alt="Player" style="width: 60px; height: 60px" />
+						<span id="dealer-blackjack-score">0</span>
+					</h2>
+				</div>
+			</div>
+			<div class="flex-blackjack-row-2">
+				<div>
+					<button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">HIT</button>
+					<button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">STAND</button>
+					<button class="btn-lg btn-danger" id="blackjack-deal-button">DEAL</button>
+				</div>
+			</div>
+			<div class="flex-blackjack-row-3">
+				<table>
+					<tr>
+						<th>Wins</th>
+						<th>Draws</th>
+						<th>Losses</th>
+					</tr>
+					<tr>
+						<td><span id="wins">0</span></td>
+						<td><span id="draws">0</span></td>
+						<td><span id="losses">0</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="static/js/script.js"></script>
+	</body>
+</html>
